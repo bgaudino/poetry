@@ -7,6 +7,22 @@
 }
 
 #content {
-  margin-top: 184px;
+  margin: auto;
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 720px;
+}
+
+#newPoem {
+  display: flex;
+  justify-content: center;
+}
+
+#stats {
+  margin: auto;
+  margin-top: 79.88px;
+  margin-bottom: 12px;
+  text-align: center;
+  width: 100vw;
+  max-width: 600px;
 }

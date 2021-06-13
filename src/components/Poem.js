@@ -1,8 +1,11 @@
 import Container from '@material-ui/core/Container';
 
+/* eslint-disable */
+
 export default function Poem(props) {
     const poem = props.poem;
     const styles = props.styles;
+    let key = 0;
     return (
         <div>
             <Container style={styles} maxWidth="sm">
@@ -16,10 +19,11 @@ export default function Poem(props) {
                     
                 <hr />
                 {poem.lines.map(line => {
+                    key++;
                     if (line === '') {
-                        return <br />
+                        return <br key={key}/>
                     } else {
-                        return <p>{line}</p>
+                        return <p key={key}>{line}</p>
                     }
                 })}
             </Container>
