@@ -1,7 +1,5 @@
 import Container from '@material-ui/core/Container';
 
-/* eslint-disable */
-
 export default function Poem(props) {
     const poem = props.poem;
     const styles = props.styles;
